@@ -58,26 +58,27 @@
 # 4. Write a program to sum a list with 4 numbers.
 
 
-# numbers=[]
+numbers=[]
 
-# number_one= int(input("entre number one:"))
-# numbers.append(number_one)
-# number_two= int(input("entre number two:"))
-# numbers.append(number_two)
+number_one= int(input("entre number one:"))
+numbers.append(number_one)
+number_two= int(input("entre number two:"))
+numbers.append(number_two)
 
-# number_three= int(input("entre number three:"))
-# numbers.append(number_three)
+number_three= int(input("entre number three:"))
+numbers.append(number_three)
 
-# number_four= int(input("entre number four:"))
-# numbers.append(number_four)
+number_four= int(input("entre number four:"))
+numbers.append(number_four)
 
-# addition= numbers[0]+numbers[1]+numbers[2]+numbers[3]
-# print("the sum of the numbers is:",addition )
+
+addition= sum(numbers)
+print("the sum of the numbers is:",addition )
 
 
 # 5. Write a program to count the number of zeros in the following tuple:
-a = (7, 0, 8, 0, 0, 9)
+# a = (7, 0, 8, 0, 0, 9)
 
-count =a.count(0)
-print("Total number of 0's:", count)
+# count =a.count(0)
+# print("Total number of 0's:", count)
 
