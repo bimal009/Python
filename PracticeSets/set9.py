@@ -65,12 +65,91 @@
 
 # Repeat program 4 for a list of such words to be censored.
 
-words_to_censor =["quietly","donkey","acting","repeating"]
-with open("text.txt","r") as f:
-    data= f.read()
+# words_to_censor =["quietly","donkey","acting","repeating"]
+# with open("text.txt","r") as f:
+#     data= f.read()
        
-for bad_words in words_to_censor:
-    data=data.replace(bad_words,"######")
+# for bad_words in words_to_censor:
+#     data=data.replace(bad_words,"######")
       
-with open("text.txt","w") as f:
-    f.write(data)
+# with open("text.txt","w") as f:
+#     f.write(data)
+
+
+# Write a program to mine a log file and find out whether it contains ‘python’.
+# word="python"
+# with open("log.txt","r") as f:
+#     data=f.read().lower()
+   
+#     if word in data:
+#         print("python exists")
+#     else:
+#         print("python doesnt exists")
+   
+    
+# Write a program to find out the line number where python is present from ques 6
+
+# word="python"
+# line_number=1
+# with open("log.txt","r") as f:
+#     lines=f.readlines()
+#     print(lines)
+
+# for line in lines:
+#     if word in line:
+#         print(line_number)
+#         line_number+=1
+    
+#     else:
+#         print("dosnot exists")
+
+
+# Write a program to make a copy of a text file “this. txt”
+
+# with open("this.txt","r")as f:
+#     data=f.read()
+    
+# with open("thiscopy.txt","w")as f:
+#     f.write(data)
+    
+# print("data copied sucessfull")
+
+
+
+# Write a program to find out whether a file is identical & matches the content of
+# another file.
+
+# def checkFiles(file1,file2):
+#     with open(file1,"r") as f1:
+#         data1= f1.read()
+
+#     with open(file2,"r") as f2:
+#         data2= f2.read()
+#     return data1 == data2
+
+
+
+# file1 = "this.txt"
+# file2 = "thiscopy.txt"
+
+# if checkFiles(file1,file2):
+#     print(f"{file1} and {file2} are identical.")
+# else:
+#     print(f"{file1} and {file2} are not identical.")
+    
+    
+    # Write a program to wipe out the content of a file using python
+
+    
+# with open("this.txt","w") as f:
+#     f.write("")
+
+# print("File content wiped out successfully!")
+
+
+# Write a python program to rename a file to “renamed_by_ python.txt.
+
+import os
+file_name="this.txt"
+rename_to="renamed_by_ python.txt"
+os.replace(file_name,rename_to)
